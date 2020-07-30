@@ -43,9 +43,6 @@ const Details = ({ getPost, post: { post, loading }, match }) => {
 					</MessageSent>
 				</div>
 			</MessagesContainer>
-			<MessageBox>
-				<SendMessage />
-			</MessageBox>
 			<PastedHeader>
 				{post.map((p) => (
 					<div className='header-items'>
@@ -60,6 +57,9 @@ const Details = ({ getPost, post: { post, loading }, match }) => {
 					</div>
 				))}
 			</PastedHeader>
+			<MessageBox>
+				<SendMessage />
+			</MessageBox>
 		</MessengerContainer>
 	);
 };
