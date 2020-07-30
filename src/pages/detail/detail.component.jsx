@@ -28,15 +28,15 @@ const Details = ({ getPost, post: { post, loading }, match }) => {
 			</MessageHeaderContainer>
 			<MessagesContainer>
 				<div className='messages'>
-					<MessageSent>
+					<MessageSent style={{margin: '0', padding: '0'}}>
 						<HeaderDetails>
 							{post.map((p) => (
 								<>
+									<div className='timestamp'>{p.timestamp}</div>
 									<div className='title'>{p.title}</div>
 									<div className='img'>
 										<img src={p.thumbnail} alt={p.title} />
 									</div>
-									<div className='timestamp'>{p.timestamp}</div>
 								</>
 							))}
 						</HeaderDetails>
