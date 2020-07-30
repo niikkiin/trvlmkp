@@ -36,7 +36,6 @@ position: relative;
   font-size: 1rem;
   height: 10vh;
   width: 100%;
-  // margin: 2rem 0;
 
   .header-items {
     display: grid;
